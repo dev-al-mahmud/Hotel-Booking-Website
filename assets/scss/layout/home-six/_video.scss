@@ -1,0 +1,65 @@
+@use '../../utils' as *;
+.si__video__six{
+    &__area{
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-attachment: fixed !important;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.3;
+        }
+    }
+    &__text{
+        position: relative;
+        z-index: 1;
+        h6{
+            display: inline-block;
+            border-radius: 7px;
+            font-size: 14px;
+            color: var(--rr-theme-primary);
+            margin-bottom: 0px;
+            text-transform: uppercase;
+        }
+        h1{
+            line-height: 72px;
+            font-size: 50px;
+            font-weight: 500;
+            margin-top: 13px;
+            text-transform: uppercase;
+            color: var(--rr-common-white);
+            @media #{$xs}{
+                font-size: 33px;
+            }
+        }
+    }
+    &__icon{
+        text-align: center;
+        margin-top: 35px;
+        a{
+            color: #fff;
+            font-size: 25px;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            background: transparent;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+            transition: .7s;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            &:hover{
+                background: var(--rr-common-white);
+                color: var(--rr-theme-primary);
+            }
+        }
+    }
+}

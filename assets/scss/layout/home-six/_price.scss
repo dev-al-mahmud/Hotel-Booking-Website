@@ -1,0 +1,55 @@
+@use '../../utils' as *;
+.si__price__six{
+    &__area{
+        background: #151719;
+    }
+    &__box{
+        text-align: center;
+        padding: 0 0 31px 0;
+        background: #2b2b2b;
+    }
+    &__thumb{
+        img{
+            transition: .6s;
+            &:hover{
+                transform: translateY(-8px);
+            }
+        }
+    }
+    &__text{
+        h6{
+            margin-bottom: 5px;
+            color: var(--rr-common-white);
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: 27px;
+            margin-bottom: 8px;
+        }
+        span{
+            color: #AA8453;
+            font-size: 18px;
+        }
+        ul{
+            margin-top: 20px;
+            li {
+                display: inline-block;
+                color: #878787;
+                font-size: 16px;
+                margin-bottom: 5px;
+                @media #{$lg}{
+                    font-size: 15px;
+                }
+                @media #{$lg2}{
+                    display: block;
+                }
+                i{
+                    color: var(--rr-theme-primary);
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.six__custom{
+    max-width: 1400px;
+}

@@ -1,0 +1,112 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 banner Style 1
+/*----------------------------------------*/
+
+/*banner-4*/
+.si__slider__four{
+	&__area{
+		position: relative;
+		z-index: 2;
+		padding-top: 370px;
+		padding-bottom: 330px;
+		@media #{$lg2}{
+            padding-top: 225px;
+        }
+		@media #{$lg2}{
+            padding-bottom: 180px;
+        }
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.6;
+			z-index: -1;
+		}
+	}
+	&__content{
+		h2{
+			color: var(--rr-common-white);
+			font-size: 70px;
+			margin-bottom: 63px;
+			@media #{$sm}{
+				font-size: 49px;
+			}
+			@media #{$xs}{
+				font-size: 49px;
+			}
+			@media #{$xxs}{
+				font-size: 39px;
+			}
+		}
+		p{
+			position: relative;
+			color: var(--rr-common-white);
+			font-size: 15px;
+			&::before{
+				position: absolute;
+				content: "";
+				width: 127px;
+				height: 1px;
+				top: -75px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				border: 1px solid var(--rr-theme-primary);
+			}
+		}
+	}
+	&__box{
+		display: flex;
+		justify-content: center;
+		margin-top: 33px;
+		@media #{$lg}{
+            display: block;
+        }
+		@media #{$lg2}{
+            display: block;
+        }
+	}
+	&__main{
+		display: flex;
+		align-items: center;
+		background: var(--rr-common-white);
+		padding: 15px 41px 16px 42px;
+		border-left: 1px solid #b1b4b7;
+	}
+	&__text{
+		margin-left: 19px;
+		h6{
+			font-size: 15px;
+			color: var(--rr-heading-primary);
+			top: 5px;
+			position: relative;
+			font-weight: 400;	
+		}
+		span{
+			font-size: 15px;
+			color: #b1b4b7;
+			top: -4px;
+			position: relative;
+			font-weight: 400;		
+		}
+		input{
+			margin-left: 0;
+		}
+	}
+}
+
+.bg-border{
+	border-radius: 10px 0px 0px 10px;
+	@media #{$lg}{
+		border-radius: 0px 0px 0px 0px;
+	}
+	@media #{$lg2}{
+		border-radius: 0px 0px 0px 0px;
+	}
+}

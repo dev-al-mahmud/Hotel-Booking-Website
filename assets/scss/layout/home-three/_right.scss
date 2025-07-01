@@ -1,0 +1,42 @@
+@use '../../utils' as *;
+.si__right{
+    &__area{}
+    &__content{
+        margin-top: 102px;
+        margin-bottom: 102px;
+        margin-left: 93px;
+        @media #{$lg2}{
+            margin-left: 0;
+        }
+        h6{
+            font-size: 20px;
+            color: #FFf;
+            @media #{$lg2}{
+                font-size: 16px;
+            }
+        }
+        h3{
+            font-size: 36px;
+            color: #FFf;
+            @media #{$lg2}{
+                font-size: 26px;
+            }
+        }
+    }
+    &__btn{
+        margin-top: 102px;
+        margin-bottom: 102px;
+        @media #{$lg2}{
+            margin-top: -40px;
+        }
+    }
+}
+.right__bg{
+    background-image: url(../imgs/right/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    margin-bottom: -141px;
+    position: relative;
+}

@@ -1,0 +1,83 @@
+@use '../../utils' as *;
+.si__about__five{
+    &__area{}
+    &__number{
+        display: inline-block;
+        margin-right: 33px;
+        margin-top: 28px;
+        h4{
+            color: var(--rr-theme-primary);
+            font-size: 55px;
+            font-weight: 500;
+        }
+        span{
+            font-size: 20px;
+            margin-top: 19px;
+            display: inline-block;
+        }
+    }
+    &__mine{
+        margin-left: 30px;
+        @media #{$lg2}{
+            margin-left: 0;
+            margin-top: 45px;
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 31px 49px 0 0;
+        border-top: 1px dashed var(--rr-theme-primary);
+        margin-top: 29px;
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 20px;
+            right: -43%;
+            width: 1px;
+            height: 44px;
+            background: var(--rr-theme-primary);
+            @media #{$lg}{
+                display: none;
+            }
+        }
+    }
+    &__thumb{
+        img{
+            width: inherit;
+            @media #{$lg}{
+                width: 100%;
+            }
+            @media #{$lg2}{
+                width: 100%;
+            }
+        }
+    }
+    &__text{
+        h6{
+            font-size: 27px;
+            font-weight: 500;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+    &__signature{
+        @media #{$lg2}{
+            margin-top: 23px;
+        }
+        img{
+            width: inherit;
+        }
+    }
+}

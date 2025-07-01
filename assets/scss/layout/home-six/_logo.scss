@@ -1,0 +1,20 @@
+@use '../../utils' as *;
+.si__brand__six{
+    &__area{
+        background: #151719;
+        padding: 47px 0px;
+    }
+    &__thumb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            li{
+                display: inline;
+                img{
+                    width: inherit;
+                }
+            }
+        }
+    }
+}

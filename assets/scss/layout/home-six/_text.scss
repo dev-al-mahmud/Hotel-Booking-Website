@@ -1,0 +1,25 @@
+@use '../../utils' as *;
+.si__text__six{
+    &__area{
+        background: #151719;
+        padding: 47px 0px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        h5{
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.6em;
+            color: var(--rr-common-white);
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+            @media #{$lg2}{
+				font-size: 19px;
+			}
+        }
+    }
+}

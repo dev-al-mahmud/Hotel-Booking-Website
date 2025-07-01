@@ -1,0 +1,76 @@
+@use '../../utils' as *;
+.si__blog__five{
+    &__area{
+        background: #fbf9f4;
+    }
+    &__mine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__p{
+        p{
+            font-size: 16px;
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__box{
+        background: var(--rr-common-white);
+        padding: 29px 30px;
+        @include border-radius(25px);
+        @media #{$lg2}{
+            margin-top: 23px;
+        }
+    }
+    &__thumb{}
+    &__text{
+        margin-top: 20px;
+        h6{
+            font-weight: 400;
+            font-size: 25px;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 20px;
+            margin-top: 7px;
+            span{
+                color: var(--rr-theme-primary);
+            }
+        }
+        p{
+            font-size: 16px;
+            margin-top: 19px;
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+                @media #{$lg}{
+                    display: none;
+                }
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+        a{
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #E7E7EB;
+            padding: 9px 29px;
+            @include border-radius(100px);
+            transition: .6s;
+            margin-top: 29px;
+            &:hover{
+                background: var(--rr-theme-primary);
+                color: var(--rr-common-white);
+            }
+        }
+    }
+}

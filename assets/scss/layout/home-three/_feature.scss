@@ -1,0 +1,95 @@
+@use '../../utils' as *;
+.si__feature{
+    &__area{
+        background: #fcfaf4;
+    }
+    &__text{
+        p{
+
+        }
+    }
+    &__thumb{
+        margin-top: 45px;
+        @media #{$lg2}{
+            margin-bottom: 25px;
+        }
+    }
+    &__img{
+        p{
+        font-size: 16px;
+        color: #000;
+        margin-top: 33px;
+        br{
+            @media #{$xl}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg2}{
+                display: none;
+            }
+        }
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        gap: 44px;
+        margin-top: 24px;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        &__inner{
+            width: 73px;
+            height: 73px;
+            line-height: 64px;
+            border: 1px dashed #AF8C3E;
+            border-radius: 50%;
+            text-align: center;
+            img{
+                width: 40px;
+            }
+        }
+    }
+    &__right{
+        margin-top: 5px;
+        text-align: center;
+        span{
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+        }
+        p{
+            font-size: 14px;
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__btn{
+        margin-top: 25px;
+    }
+}

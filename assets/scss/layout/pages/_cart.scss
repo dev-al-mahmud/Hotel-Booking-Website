@@ -1,0 +1,76 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  8.12 room scss
+/*----------------------------------------*/
+
+// FIlter Range CSS
+.range-slider-text span {
+    padding: 4px 20px;
+    border: 1px solid var(--rr-theme-primary);
+}
+.price-range-wrap {
+    border: 1px solid #E7E7EB;
+    padding: 35px 40px 49px;
+}
+.price-range-wrap .range-slider {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-range-wrap .range-slider .price-input {
+    position: relative;
+    display: flex;
+    width: 139px;
+}
+
+.price-range-wrap .range-slider .price-input:after {
+	position: absolute;
+	left: 88px;
+	top: 13px;
+	height: 2px;
+	width: 5px;
+	background: #0E1730;
+	content: "";
+}
+.price-range-wrap .range-slider{
+	font-weight: 400;
+	font-size: 20px;
+	color: #0E1730;
+}
+
+.price-range-wrap .range-slider .price-input input {
+    color: #0E1730;
+    border: none;
+    display: inline-block;
+    margin-left: 0;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.price-range-wrap .price-range {
+	border-radius: 0;
+}
+
+.price-range-wrap .price-range.ui-widget-content {
+    border: none;
+    background: var(--rr-theme-primary);
+    height: 5px;
+    cursor: pointer;
+}
+
+.price-range-wrap .price-range.ui-widget-content .ui-slider-handle {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: var(--rr-theme-primary);
+	border: none;
+	-webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	outline: none;
+	cursor: pointer;
+}
+
+.price-range-wrap .price-range .ui-slider-range {
+	border-radius: 0;
+}

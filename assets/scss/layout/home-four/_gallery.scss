@@ -1,0 +1,21 @@
+@use '../../utils' as *;
+.si__gallery__four{
+    &__area{
+        background: #edebe5;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+    &__thumb{
+        img{
+            margin-bottom: 26px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+.custom-container {
+    max-width: 1797px;
+}

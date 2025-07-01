@@ -1,0 +1,37 @@
+@use '../../utils' as *;
+.si__service{
+    &__area{
+        background: #fef0d7;
+    }
+    &__thumb{
+        border: 1px dashed #AF8C3E;
+        border-radius: 6px;
+        padding: 10px 11px;
+    }
+    &__text{
+        margin-top: 17px;
+        h6{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            br{
+                @media #{$xxs}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$mxm}{
+                    display: none;
+                }
+            }
+        }
+    }
+}

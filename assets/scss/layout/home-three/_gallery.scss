@@ -1,0 +1,36 @@
+@use '../../utils' as *;
+.si__gallery{
+    &__area{
+        
+    }
+    &__thumb {
+        border: 1px dashed #AF8C3E;
+        border-radius: 6px;
+        padding: 10px 11px;
+        overflow: hidden;
+        transition: .6s;
+        img{
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__img {
+        border: 1px dashed #AF8C3E;
+        border-radius: 6px;
+        padding: 10px 11px;
+        margin-top: 30px;
+        overflow: hidden;
+        transition: .6s;
+        img{
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.style__one{
+    @media #{$lg2}{
+        margin-top: 30px;
+    }
+}

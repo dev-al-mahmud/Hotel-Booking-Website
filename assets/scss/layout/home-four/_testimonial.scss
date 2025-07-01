@@ -1,0 +1,59 @@
+@use '../../utils' as *;
+.si__testimonial__four{
+    &__area{
+        position: relative;
+        z-index: 2;
+        padding: 200px 0;
+        background-attachment: fixed !important;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: -2;
+            opacity: 0.6;
+        }
+    }
+    &__text{
+        h6{
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 45px;
+            color: var(--rr-common-white);
+            @media #{$lg}{
+                font-size: 31px;
+            }
+            @media #{$lg2}{
+                font-size: 29px;
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__content{
+        margin-top: 35px;
+        a i{
+            color: var(--rr-theme-primary);
+        }
+        h5{
+            color: var(--rr-common-white);
+            font-size: 40px;
+            font-weight: 400;
+            margin-top: 11px;
+            margin-bottom: 10px;
+            @media #{$lg2}{
+                font-size: 37px;
+            }
+        }
+        span{
+            font-size: 16px;
+            color: var(--rr-common-white);
+        }
+    }
+}

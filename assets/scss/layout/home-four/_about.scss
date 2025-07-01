@@ -1,0 +1,80 @@
+@use '../../utils' as *;
+.si__about__four{
+    &__area{
+        background: #edebe5;
+    }
+    &__thumb{
+        margin-top: 184px;
+        @media #{$lg2}{
+            margin-top: 35px;
+        }
+        @media #{$xs}{
+            margin-top: 0px;
+        }
+        img{
+            border-radius: 10px;
+        }
+    }
+    &__thumbtwo{
+        margin-top: 75px;
+        img{
+            border-radius: 10px;
+        }
+    }
+    &__icon{
+        a i{
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: var(--rr-common-white);
+            text-align: center;
+            font-size: 21px;
+            border-radius: 50px;
+            color: var(--rr-theme-primary);
+            transition: .6s;
+            &:hover{
+                background: var(--rr-heading-primary);
+            }
+        }
+    }
+    &__main{
+        background: var(--rr-theme-primary);
+        padding: 11px 0px 23px 22px;
+        border-radius: 10px;
+        @media #{$lg2}{
+            margin-top: 40px;
+        }
+    }
+    &__box{
+        margin-bottom: 37px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: -17px;
+            left: 0;
+            width: 241px;
+            height: 1px;
+            border: 1px solid rgba(71, 71, 71, 0.3);
+            @media #{$lg}{
+                width: 185px;
+            }
+        }
+    }
+    &__text{
+        margin-top: 10px;
+        h6{
+            font-size: 20px;
+            color: var(--rr-common-white);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p{
+            color: var(--rr-common-white);
+            font-size: 17px;
+        }
+    }
+}
+.si-border::before{
+    border: none;
+}

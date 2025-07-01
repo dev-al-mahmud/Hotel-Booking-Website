@@ -1,0 +1,70 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 banner Style 1
+/*----------------------------------------*/
+
+/*banner-5*/
+.si__slider__six{
+	&__mine{
+		position: relative;
+	}
+	&__area{
+		padding-top: 250px;
+		padding-bottom: 141px;
+	}
+	&__content{
+		background: rgba(15, 13, 11, 0.3);
+		backdrop-filter: blur(8px);
+		padding: 69px 0 59px 0;
+		h6{
+			color: var(--rr-common-white);
+			font-size: 18px;
+			font-weight: 400;
+			margin-top: 23px;
+			@media #{$lg2}{
+				font-size: 15px;
+			}
+		}
+		h1{
+			color: var(--rr-common-white);
+			font-size: 75px;
+			font-weight: 500;
+			line-height: 1.2;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			margin-top: 6px;
+			margin-bottom: 25px;
+			@media #{$lg2}{
+				font-size: 73px;
+			}
+			@media #{$sm}{
+				font-size: 52px;
+			}
+			@media #{$xs}{
+				font-size: 38px;
+			}
+			@media #{$xxs}{
+				font-size: 27px;
+			}
+		}
+	}
+	&__icon{
+		a i{
+			color: var(--rr-theme-primary);
+		}
+	}
+}
+.swiper-pagination-bullet{
+	height: 20px;
+    width: 20px;
+    border-radius: 50%;
+	position: absolute;
+	right: 0;
+	border: 1px solid #fff;
+	margin-bottom: 10px !important;
+	background: transparent;
+}
+.swiper-pagination-bullet-active{
+	background: var(--rr-theme-primary);
+	border: 1px solid var(--rr-theme-primary);
+}

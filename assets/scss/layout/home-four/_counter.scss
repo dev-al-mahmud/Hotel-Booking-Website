@@ -1,0 +1,49 @@
+@use '../../utils' as *;
+.si__counter__four{
+    &__area{
+        position: relative;
+		z-index: 2;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.6;
+			z-index: -1;
+		}
+    }
+	&__box{
+		&__inner{
+			display: flex;
+			justify-content: center;
+			@media #{$lg2}{
+				margin-top: 50px;
+			}
+		}
+	}
+}
+.si__icon {
+	background: transparent;
+	position: inherit !important;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	border: 1px dashed var(--rr-theme-primary);
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 0;
+	margin-bottom: 25px;
+	img{
+		width: 80px;
+	}
+}
+.si__item {
+    border: none;
+    padding: 0;
+}
+.si__item span{
+	top: -3px;
+}

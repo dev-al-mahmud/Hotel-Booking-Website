@@ -1,0 +1,51 @@
+@use '../../utils' as *;
+.si__section__title__six {
+    @media #{$lg2}{
+        padding-bottom: 25px;
+    }
+    h6{
+        display: inline-block;
+        border-radius: 7px;
+        font-size: 14px;
+        color: var(--rr-theme-primary);
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+    h2{
+        line-height: 72px;
+        font-size: 52px;
+        font-weight: 500;
+        margin-top: 13px;
+        text-transform: uppercase;    
+        color: var(--rr-common-white);  
+        @media #{$lg2}{
+            font-size: 35px;
+            line-height: 50px;
+        }
+        @media #{$xxs}{
+            font-size: 28px;
+        }
+    }
+    p{
+        margin-top: 22px;
+        font-size: 15px;
+        color: var(--rr-common-white);        
+        @media #{$lg2}{
+            font-size: 16px;
+        }
+        br{
+            @media #{$xl}{
+                display: none;
+            }
+            @media #{$lg}{
+                display: none;
+            }
+            @media #{$lg2}{
+                display: none;
+            }
+        }
+    }
+}
+.six-title{
+    padding-top: 67px;
+}

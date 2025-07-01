@@ -1,0 +1,60 @@
+@use '../../utils' as *;
+.si__restaurent__six{
+    &__area{
+        background: #151719;
+    }
+    &__right{
+        background: #222222;
+        align-items: center;
+    }
+    &__box{
+        margin-left: 13px;
+        @media #{$lg2}{
+            margin-top: 33px;
+        }
+    }
+    &__text{
+        h6{
+            display: inline-block;
+            border-radius: 7px;
+            font-size: 14px;
+            color: var(--rr-theme-primary);
+            margin-bottom: 0px;
+            text-transform: uppercase;
+        }
+        h2{
+            color: #FFFFFF;
+            font-size: 32px;
+            text-transform: uppercase;
+            margin: 0px 0px 0px 0px;
+            margin-top: 12px;
+            @media #{$xs}{
+                font-size: 24px;
+            }
+        }
+        p{
+            color: #CFCFCF;
+            margin: 0px 0px 0px 0px;
+            margin-top: 11px;
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+                @media #{$lg}{
+                    display: none;
+                }
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__thumb{
+        @media #{$lg2}{
+            margin-top: 21px;
+        }
+    }
+    &__btn{
+        margin-top: 23px;
+    }
+}

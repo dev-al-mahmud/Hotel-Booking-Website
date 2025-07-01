@@ -1,0 +1,127 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 banner Style 1
+/*----------------------------------------*/
+
+/*banner-5*/
+.si__slider__five{
+	&__area{
+		padding-top: 173px;
+		padding-bottom: 350px;
+		position: relative;
+		z-index: 2;
+		@media #{$lg}{
+			padding-bottom: 220px;
+		}
+		@media #{$lg2}{
+			padding-bottom: 200px;
+		}
+		&::before{
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: var(--rr-heading-primary);
+			opacity: 0.7;
+			z-index: -1;
+		}
+	}
+	&__mine{
+		position: relative;
+	}
+	&__title{
+		h6{
+			font-weight: 400;
+			font-size: 15px;
+			color: var(--rr-common-white);
+			text-transform: uppercase;
+			@media #{$lg2}{
+				font-size: 14px;
+			}
+		}
+		h1{
+			font-weight: 400;
+			font-size: 80px;
+			color: var(--rr-common-white);
+			margin-top: 7px;
+			@media #{$lg}{
+				font-size: 75px;
+				line-height: 75px;
+			}
+			@media #{$md}{
+				font-size: 70px;
+				line-height: 70px;
+			}
+			@media #{$sm}{
+				font-size: 60px;
+				line-height: 60px;
+			}
+			@media #{$xs}{
+				font-size: 47px;
+			}
+			@media #{$xxs}{
+				font-size: 36px;
+			}
+		}
+		p{
+			font-size: 16px;
+			color: var(--rr-common-white);
+			margin-top: 13px;
+			margin-bottom: 25px;
+			br{
+				@media #{$lg2}{
+					display: none;
+				}
+			}
+		}
+	}
+	&__box__inner{
+		margin-left: 55px;
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		z-index: 1;
+	}
+}
+.si__navigation {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+	margin-right: 55px;
+	position: absolute;
+	bottom: 75px;
+	right: 0;
+	z-index: 1;
+	@media #{$lg2}{
+		display: none;
+	}
+}
+.si__navigation button {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background: var(--rr-theme-primary);
+    border: none;
+	@include border-radius(50%);
+	transition: .6s;
+	&:hover{
+		background: var(--rr-heading-primary);
+	}
+}
+.si__navigation button i {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--rr-common-white);
+}
+.style-five{
+	@include border-radius(100px);
+	@media #{$xl2}{
+		display: none;
+	}
+}
+.style-five a {
+    border-radius: 100px;
+}

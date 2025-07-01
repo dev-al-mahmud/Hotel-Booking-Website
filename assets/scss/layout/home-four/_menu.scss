@@ -1,0 +1,60 @@
+@use '../../utils' as *;
+.si__menu{
+    &__area{
+        
+    }
+    &__title{
+        h6{
+            font-weight: 400;
+            font-size: 40px;
+            color: var(--rr-theme-primary);
+            border: 1px dashed var(--rr-theme-primary);
+            padding: 13px 45px 18px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 59px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 18px;
+            right: 55px;
+            height: 2px;
+            width: 100%;
+            border: 1px dotted #767572;
+            z-index: -1;
+        }
+    }
+    &__text{
+        position: relative;
+        h6{
+            font-weight: 400;
+            font-size: 31px;
+            background: #eeebe6;
+            padding-right: 15px;
+            img{
+                width: inherit;
+            }
+        }
+    }
+    &__texttwo{
+        span{
+            font-size: 23px;
+            color: var(--rr-heading-primary);
+        }
+    }
+    &__p{
+        p{
+            font-size: 14px;
+            margin-top: 11px;
+        }
+    }
+}

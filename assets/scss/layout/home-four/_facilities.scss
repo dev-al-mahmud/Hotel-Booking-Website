@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+.si__facilities{
+    &__area{
+
+    }
+    &__box{
+        @media #{$lg2}{
+            margin-bottom: 40px;
+        }
+    }
+    &__icon{  
+        position: relative;
+        display: inline-block;
+        img{
+            width: 45px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: -35px;
+            left: -39px;
+            width: 120px;
+            height: 120px;
+            border: 2px dashed var(--rr-theme-primary);
+            border-radius: 50%;
+            animation: textrotate 3s linear infinite;
+        }
+    }
+    &__text{
+        margin-top: 50px;
+        h6{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            margin-top: 3px;
+            @media #{$lg}{
+                font-size: 14px;
+            }
+        }
+    }
+}

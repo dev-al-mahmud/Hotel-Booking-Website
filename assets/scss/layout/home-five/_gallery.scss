@@ -1,0 +1,32 @@
+@use '../../utils' as *;
+.si__gallery__five{
+    &__area{
+        background: #fbf9f4;
+    }
+    &__mine{
+        display: flex;
+        gap: 30px;
+        @media #{$lg2}{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__thumb {
+        margin-top: 30px;
+        @media #{$lg2}{
+            margin-top: inherit;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.custom__container {
+    max-width: 1665px;
+}
+.si__thumb{
+    padding-top: 30px;
+    @media #{$lg2}{
+        padding-top: 0px;
+    }
+}

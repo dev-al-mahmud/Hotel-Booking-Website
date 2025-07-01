@@ -1,0 +1,254 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 banner Style 1
+/*----------------------------------------*/
+
+//** Banner1 style**//
+.banner1{
+	&__content{
+		p{
+			font-family:var(--rr-ff-body);
+			color: var(--rr-text-body);
+			font-weight: var(--rr-fw-regular);
+			font-style: normal;
+			font-size: 16px;
+			line-height: 27px;
+			margin-bottom: 0;
+		}
+	}
+	&__subtitle {
+		font-family: var(--rr-ff-heading);
+		color: var(--rr-heading-primary1);
+		font-weight: var(--rr-fw-regular);
+		font-style: normal;
+		font-size: 15px;
+		line-height: 26px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&__title{
+		font-family: var(--rr-ff-heading);
+		color: var(--rr-heading-primary);
+		font-weight: var(--rr-fw-regular);
+		font-style: normal;
+		font-size: 66px;
+		line-height: 80px;
+	}
+	&__media{
+		position: absolute;
+		max-width: 694px;
+		top: 28%;
+		right: 100px;
+		width: 100%;
+		height: 666px;
+		transition: .3s;
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			position: relative;
+			margin: 0 auto;
+			right: -50px;
+			margin-top: 50px;
+		}
+		@media #{$xs} {
+			position: relative;
+			margin: 0 auto;
+			right: -50px;
+			margin-top: 0;
+		}
+		@media #{$xxl} {
+			right: 0;
+		}
+		@media #{$sm, $xs} {
+			right: 0;
+			height: 500px;
+		}
+		@media #{$xxs} {
+			right: 0;
+			height: 400px;
+		}
+		@media #{$mxm} {
+			right: 0;
+			height: 320px;
+		}
+		
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+/*banner-1*/
+.banner {
+	position: relative;
+	z-index: 1;
+	.bg-color{
+		background-color: var(--rr-common-white);
+		width: 100%;
+		height: 140px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+	&__slider {
+		// position: absolute;
+		width: 944px;
+		height: 840px;
+		&__arrow {
+			gap: 20px;
+
+			.arrow-nav{
+				position: absolute;
+				top: 50%;
+				left: 0;
+				z-index: 2;
+				transform: translateY(-50%);
+				left: -50px;
+				&.right-arrow{
+					left: auto;
+					right: -50px;
+				}
+			}
+
+			&-prev, &-next {
+
+			svg path{
+				stroke: #595959;
+			}
+			&:hover {
+				svg path[stroke="var(--rr-heading-primary)"] {
+				stroke: var(--rr-theme-primary);
+				}
+			}
+			}
+		}
+		}
+		&__content1 {
+			padding-top: 106px;
+			background: #F7F7F7;
+			@media #{$md, $sm, $xs} {
+				margin-bottom: 50px;
+			}
+			.subtitle{
+				font-family: var(--rr-ff-heading);
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 26px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: #0E1730;
+				margin-bottom: 0;
+			}
+			.title{
+				font-family: var(--rr-ff-heading);
+				font-style: normal;
+				font-weight: 400;
+				font-size: 66px;
+				line-height: 80px;
+				color: #00061D;
+				margin-bottom: 20px;
+				@media #{$xs} {
+					font-size: 50px;
+					line-height: 60px;
+				}
+			}
+			.dec{
+				font-family: var(--rr-ff-body);
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 27px;
+				color: #595959;
+				margin-bottom: 0;
+				@media #{$lg, $md, $sm, $xs} {
+					br{
+						display: none;
+					}
+				}
+			}
+	  }
+
+	&__bottom {
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			bottom: 0;
+			z-index: 5;
+			left: 24.5%;
+			justify-content: center;
+			@media #{$xxl} {
+                left: 20%;
+            }
+			@media #{$xl} {
+                left: 15%;
+            }
+			@media #{$lg} {
+                left: 7%;
+            }
+			@media #{$xs} {
+                display: none;
+            }
+		}
+		
+	}
+}
+.gallery {
+    overflow: hidden;
+
+    &-thumbs {
+		max-width: 345px;
+		width: 100%;
+        padding: 0;
+		left: 50%;
+        overflow: hidden;
+
+        .swiper-slide {
+            width: 104px;
+			height: 104px;
+            text-align: center;
+            overflow: hidden;
+            &-active {
+                opacity: 1;
+            }
+            img {
+                width: 104px;
+				height: 104px;
+				cursor: pointer;
+            }
+        }
+    }
+}
+.first-p-0{
+	padding: 0;
+	@media #{$xl, $lg, $md, $sm, $xs} {
+		padding-left: 15px;
+	}
+}
+.gallery-thumbs .swiper-slide-active{
+	position: relative;
+}
+.gallery-thumbs .swiper-slide::before {
+    position: absolute;
+    content: "";
+    background: #AF8C3E;
+    width: 85%;
+    height: 86%;
+    top: 8px;
+    left: 8px;
+    opacity: 0.8;
+    right: 8px;
+    bottom: 8px;
+	transform: scale(0);
+	transition: .5s;
+}
+
+.gallery-thumbs .swiper-slide-active::before{
+	transform: scale(1);
+}
+
+
+
+
